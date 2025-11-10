@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burrow - Find Your Perfect Pet Companion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo1.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar glass-box">
+                <div class="logo-area">
+                    <img src="logo1.png" alt="Beast Den Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1 class="logo-title">Burrow</h1>
+                        <p class="tagline">Your Pet Paradise</p>
+                    </div>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for pets, breeds, supplies..." id="searchInput">
+                    <button id="searchBtn">🔍</button>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#pets">Our Pets</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="cart-icon">
+                    🛒 <span class="cart-count">0</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to The Burrow</h1>
+                <p class="hero-subtitle">Where Every Pet Finds Their Perfect Forever Home</p>
+                <p class="hero-description">From playful puppies to exotic birds, discover companions that will fill your life with joy, loyalty, and unconditional love.</p>
+                <div class="hero-buttons">
+                    <a href="#pets" class="btn btn-primary">Adopt a Pet</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card glass-box">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Quality Assured</h3>
+                    <p>All pets are health-checked and certified by veterinarians</p>
+                </div>
+                <div class="feature-card glass-box">
+                    <div class="feature-icon">💚</div>
+                    <h3>Ethical Breeding</h3>
+                    <p>We partner only with responsible breeders</p>
+                </div>
+                <div class="feature-card glass-box">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Lifetime Support</h3>
+                    <p>Expert guidance throughout your pet's life</p>
+                </div>
+                <div class="feature-card glass-box">
+                    <div class="feature-icon">✨</div>
+                    <h3>Wide Selection</h3>
+                    <p>Dogs, cats, birds, fish, and exotic companions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider-section">
+        <div class="container">
+            <h2 class="section-title">Our Happy Families</h2>
+            <p class="section-subtitle">See the joy our companions bring to their forever homes</p>
+            <div class="slider-container glass-box">
+                <div class="slide fade">
+                    <img src="images4.png" alt="Happy pet family enjoying together">
+                    <div class="slide-caption">Finding Happiness Together</div>
+                </div>
+                <div class="slide fade">
+                    <img src="images5.png" alt="Joyful pets in their new homes">
+                    <div class="slide-caption">Creating Lifelong Bonds</div>
+                </div>
+                <div class="slide fade">
+                    <img src="images6.png" alt="Loving bond between pets and owners">
+                    <div class="slide-caption">Love at First Sight</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="slider-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="pets-section" id="pets">
+        <div class="container">
+            <h2 class="section-title">Meet Our Available Pets</h2>
+            <p class="section-subtitle">Each one is unique and waiting for a loving home</p>
+            
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All Pets</button>
+                <button class="filter-btn" data-category="dogs">🐕 Dogs</button>
+                <button class="filter-btn" data-category="cats">🐱 Cats</button>
+                <button class="filter-btn" data-category="birds">🦜 Birds</button>
+                <button class="filter-btn" data-category="fish">🐠 Fish</button>
+                <button class="filter-btn" data-category="exotic">🦎 Exotic</button>
+            </div>
+
+            <div class="pets-grid">
+                <!-- Dog -->
+                <div class="pet-card glass-box" data-category="dogs">
+                    <div class="card-image">
+                        <img src="image1.png" alt="Golden Retriever Puppy">
+                        <div class="card-badge popular">Popular</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Golden Retriever</h3>
+                        <p class="pet-name">Max</p>
+                        <p class="price">Rs. 45,000</p>
+                        <p class="description">
+                            <strong>About Max:</strong> A playful and friendly 3-month-old Golden Retriever puppy. Max loves to play fetch, cuddle, and is great with children. He's vaccinated and ready for his forever home!
+                        </p>
+                        <div class="card-features">
+                            <span class="feature">🐕 3 Months Old</span>
+                            <span class="feature">💉 Vaccinated</span>
+                            <span class="feature">👶 Kid-Friendly</span>
+                        </div>
+                        <button class="btn btn-adopt">Adopt Max</button>
+                    </div>
+                </div>
+
+                <!-- Cat -->
+                <div class="pet-card glass-box" data-category="cats">
+                    <div class="card-image">
+                        <img src="image2.png" alt="Persian Cat">
+                        <div class="card-badge new">New Arrival</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Persian Cat</h3>
+                        <p class="pet-name">Luna</p>
+                        <p class="price">Rs. 35,000</p>
+                        <p class="description">
+                            <strong>About Luna:</strong> An elegant and affectionate Persian cat with beautiful long fur. Luna is calm, loves to be pampered, and makes a perfect indoor companion.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature">🐱 6 Months Old</span>
+                            <span class="feature">✨ Purebred</span>
+                            <span class="feature">🏠 Indoor Cat</span>
+                        </div>
+                        <button class="btn btn-adopt">Adopt Luna</button>
+                    </div>
+                </div>
+
+                <!-- Bird -->
+                <div class="pet-card glass-box" data-category="birds">
+                    <div class="card-image">
+                        <img src="image3.png" alt="Cockatiel">
+                        <div class="card-badge special">Special</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cockatiel</h3>
+                        <p class="pet-name">Charlie</p>
+                        <p class="price">Rs. 12,000</p>
+                        <p class="description">
+                            <strong>About Charlie:</strong> A cheerful and social cockatiel who loves to whistle and interact. Charlie can learn tricks and is a delightful companion for bird lovers.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature">🦜 1 Year Old</span>
+                            <span class="feature">🎵 Vocal</span>
+                            <span class="feature">🎪 Trainable</span>
+                        </div>
+                        <button class="btn btn-adopt">Adopt Charlie</button>
+                    </div>
+                </div>
+
+                <!-- Fish -->
+                <div class="pet-card glass-box" data-category="fish">
+                    <div class="card-image">
+                        <img src="image1.png" alt="Betta Fish">
+                        <div class="card-badge">Aquatic</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Betta Fish</h3>
+                        <p class="pet-name">Aqua</p>
+                        <p class="price">Rs. 3,500</p>
+                        <p class="description">
+                            <strong>About Aqua:</strong> A stunning betta fish with vibrant colors and flowing fins. Low maintenance and perfect for beginners looking for an aquatic companion.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature">🐠 Colorful</span>
+                            <span class="feature">💧 Easy Care</span>
+                            <span class="feature">🏡 Compact</span>
+                        </div>
+                        <button class="btn btn-adopt">Adopt Aqua</button>
+                    </div>
+                </div>
+
+                <!-- Exotic -->
+                <div class="pet-card glass-box" data-category="exotic">
+                    <div class="card-image">
+                        <img src="image2.png" alt="Bearded Dragon">
+                        <div class="card-badge exotic-badge">Exotic</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bearded Dragon</h3>
+                        <p class="pet-name">Spike</p>
+                        <p class="price">Rs. 28,000</p>
+                        <p class="description">
+                            <strong>About Spike:</strong> A friendly and docile bearded dragon. Spike enjoys basking under heat lamps and being handled. Great for exotic pet enthusiasts!
+                        </p>
+                        <div class="card-features">
+                            <span class="feature">🦎 8 Months Old</span>
+                            <span class="feature">🌡️ Heat Loving</span>
+                            <span class="feature">🤲 Handleable</span>
+                        </div>
+                        <button class="btn btn-adopt">Adopt Spike</button>
+                    </div>
+                </div>
+
+                <!-- Rabbit -->
+                <div class="pet-card glass-box" data-category="exotic">
+                    <div class="card-image">
+                        <img src="image3.png" alt="Holland Lop Rabbit">
+                        <div class="card-badge">Adorable</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Holland Lop Rabbit</h3>
+                        <p class="pet-name">Coco</p>
+                        <p class="price">Rs. 18,000</p>
+                        <p class="description">
+                            <strong>About Coco:</strong> An adorable Holland Lop rabbit with soft fur and floppy ears. Coco is gentle, loves vegetables, and makes a wonderful house pet.
+                        </p>
+                        <div class="card-features">
+                            <span class="feature">🐰 5 Months Old</span>
+                            <span class="feature">🥕 Veggie Lover</span>
+                            <span class="feature">💕 Gentle</span>
+                        </div>
+                        <button class="btn btn-adopt">Adopt Coco</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Premium Services</h2>
+            <p class="section-subtitle">Everything your pet needs under one roof</p>
+            
+            <div class="services-grid">
+                <div class="service-card glass-box">
+                    <div class="service-icon">🏥</div>
+                    <h3>Veterinary Care</h3>
+                    <p>Regular check-ups, vaccinations, and emergency care from certified veterinarians</p>
+                </div>
+                <div class="service-card glass-box">
+                    <div class="service-icon">✂️</div>
+                    <h3>Grooming & Spa</h3>
+                    <p>Professional grooming, bathing, nail trimming, and styling services</p>
+                </div>
+                <div class="service-card glass-box">
+                    <div class="service-icon">🎓</div>
+                    <h3>Training Programs</h3>
+                    <p>Obedience training, behavior modification, and socialization classes</p>
+                </div>
+                <div class="service-card glass-box">
+                    <div class="service-icon">🍖</div>
+                    <h3>Nutrition Consulting</h3>
+                    <p>Customized diet plans and premium food recommendations</p>
+                </div>
+                <div class="service-card glass-box">
+                    <div class="service-icon">🏨</div>
+                    <h3>Pet Boarding</h3>
+                    <p>Safe and comfortable boarding facilities for your peace of mind</p>
+                </div>
+                <div class="service-card glass-box">
+                    <div class="service-icon">🛍️</div>
+                    <h3>Pet Supplies</h3>
+                    <p>Premium food, toys, accessories, and everything your pet needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="adoption-form-section" id="breed">
+        <div class="container">
+            <h2 class="section-title">Start Your Adoption Journey</h2>
+            <p class="section-subtitle">Tell us about your preferences and we'll help you find the perfect match</p>
+            
+            <form class="adoption-form glass-box">
+                <div class="form-section">
+                    <h3>What type of pet are you looking for?</h3>
+                    <div class="pet-type-grid">
+                        <label class="pet-type-option">
+                            <input type="radio" name="pet-type" value="dog">
+                            <div class="option-content">
+                                <span class="option-icon">🐕</span>
+                                <span class="option-label">Dog</span>
+                            </div>
+                        </label>
+                        <label class="pet-type-option">
+                            <input type="radio" name="pet-type" value="cat">
+                            <div class="option-content">
+                                <span class="option-icon">🐱</span>
+                                <span class="option-label">Cat</span>
+                            </div>
+                        </label>
+                        <label class="pet-type-option">
+                            <input type="radio" name="pet-type" value="bird">
+                            <div class="option-content">
+                                <span class="option-icon">🦜</span>
+                                <span class="option-label">Bird</span>
+                            </div>
+                        </label>
+                        <label class="pet-type-option">
+                            <input type="radio" name="pet-type" value="fish">
+                            <div class="option-content">
+                                <span class="option-icon">🐠</span>
+                                <span class="option-label">Fish</span>
+                            </div>
+                        </label>
+                        <label class="pet-type-option">
+                            <input type="radio" name="pet-type" value="rabbit">
+                            <div class="option-content">
+                                <span class="option-icon">🐰</span>
+                                <span class="option-label">Rabbit</span>
+                            </div>
+                        </label>
+                        <label class="pet-type-option">
+                            <input type="radio" name="pet-type" value="exotic">
+                            <div class="option-content">
+                                <span class="option-icon">🦎</span>
+                                <span class="option-label">Exotic</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Your Name *</label>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email" placeholder="your.email@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" placeholder="+92 300 1234567" required>
+                    </div>
+                    <div class="form-group">
+                        <label>City *</label>
+                        <input type="text" placeholder="Your city" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Tell us about yourself and your home</label>
+                    <textarea placeholder="Do you have experience with pets? Do you have a backyard? Any other pets at home?" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>What are you looking for in a pet?</label>
+                    <textarea placeholder="Describe your ideal companion - temperament, size, activity level, etc." rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">Submit Adoption Request</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Our Impact in Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card glass-box">
+                    <div class="stat-number">3,450+</div>
+                    <div class="stat-label">Pets Adopted</div>
+                    <div class="stat-description">Successful forever homes</div>
+                </div>
+                <div class="stat-card glass-box">
+                    <div class="stat-number">1,250+</div>
+                    <div class="stat-label">Happy Families</div>
+                    <div class="stat-description">Satisfied customers</div>
+                </div>
+                <div class="stat-card glass-box">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Pet Breeds</div>
+                    <div class="stat-description">Wide selection</div>
+                </div>
+                <div class="stat-card glass-box">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years Experience</div>
+                    <div class="stat-description">Trusted expertise</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" id="about">
+        <div class="container">
+            <h2 class="section-title">Why The Burrow?</h2>
+            <p class="section-subtitle">The reason for our existence</p>
+            <div class="video-wrapper glass-box">
+                <video controls poster="image1.png">
+                    <source src="video123.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper glass-box">
+                <div class="contact-info-side">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions? We're here to help you find your perfect companion!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info@demoburrow.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+92 300 1234567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>123 Pet Paradise Lane<br>Islamabad, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon-Sat: 9AM - 8PM<br>Sunday: 10AM - 6PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-side">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label>Your Name *</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="+92 300 1234567">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="How can we help you?">
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea placeholder="Tell us more about your inquiry..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <img src="logo1.png" alt="Beast Den Logo" class="footer-logo">
+                    <h3>Burrow Den</h3>
+                    <p>Your trusted partner in finding the perfect pet companion since 2010. We're dedicated to connecting loving homes with wonderful pets.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">📸</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">💼</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#pets">Available Pets</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#breed">Adoption</a></li>
+                            <li><a href="#about">About Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Pet Categories</h4>
+                        <ul>
+                            <li><a href="#">Dogs</a></li>
+                            <li><a href="#">Cats</a></li>
+                            <li><a href="#">Birds</a></li>
+                            <li><a href="#">Fish & Aquatic</a></li>
+                            <li><a href="#">Exotic Pets</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Pet Care Guide</a></li>
+                            <li><a href="#">Training Tips</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Adoption Process</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Burrow. All rights reserved. Made with 💙 for pet lovers everywhere</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="brain.js"></script>
+</body>
+
+</html>

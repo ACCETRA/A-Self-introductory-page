@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAL PAL Gallery</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="image1.1.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to The Pal Pal Fan Page</h1>
+            <p class="subtitle">Explore CAST & The SONG</p>
+        </header>
+
+        <!-- Cast Section -->
+        <div class="category-section">
+            <h2>Meet the Cast</h2>
+            <div class="image-container">
+                <div class="image-card">
+                    <img src="image1.1.png" alt="Ali Soomro">
+                    <div class="image-label">Ali Soomro</div>
+                </div>
+                <div class="image-card">
+                    <img src="image2.1.png" alt="Affan Khan">
+                    <div class="image-label">Affan Khan</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="category-section">
+            <h2>Contact Us</h2>
+            <div class="glass-box">
+                <form class="contact-form">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" aria-label="email" placeholder="Enter your email" required>
+                    <textarea rows="4" placeholder="Enter your message here"></textarea>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="subscribe" value="Subscribe">
+                        <span class="checkmark"></span>
+                        Subscribe to our newsletter
+                    </label>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Favorite Selection -->
+        <div class="category-section">
+            <h2>Choose Your Favorite</h2>
+            <div class="radio-container">
+                <div class="radio-option">
+                    <input type="radio" name="choice" value="Choice 1" id="choice1">
+                    <label for="choice1" class="radio-label">
+                        <div class="radio-content">
+                            <span class="radio-text">Ali Soomro</span>
+                            <img src="image1.1.png" alt="Ali Soomro">
+                        </div>
+                    </label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" name="choice" value="Choice 2" id="choice2">
+                    <label for="choice2" class="radio-label">
+                        <div class="radio-content">
+                            <span class="radio-text">Affan Khan</span>
+                            <img src="image2.1.png" alt="Affan Khan">
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="category-section">
+            <h2>Featured Video</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Pal Pal Fan Page Gallery. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
